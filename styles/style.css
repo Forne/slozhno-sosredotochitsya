@@ -2,4 +2,98 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 130%;
+  object-fit: cover;
+  object-position: center;
 }
+
+/* Header */
+.header {
+  background-image: var(--cover-image);
+  height: 100vh;
+}
+
+.header__logo {
+  text-shadow: 4px 4px 0px var(--accent-color);
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__heading {
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__content__title {
+  color: var(--accent-color);
+}
+
+.section__content__subtitle {
+  color: var(--accent-color);
+  /*font-weight: 400;*/
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery__img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Footer */
+.footer {
+  height: 100vh;
+  padding: 10px;
+}
+
+.footer__logo {
+  text-shadow: 2px 2px 0px var(--accent-color);
+}
+
+/* Utils */
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.title-decor_light {
+  font-weight: 400;
+}
+
+.logo {
+  color: var(--logo-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+/* dev 
+* {
+  outline: 1px dotted blueviolet;
+}*/
