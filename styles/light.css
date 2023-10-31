@@ -8,13 +8,10 @@
   --bg-color: #FFF1F7;
   --accent-color: #FF8DCB;
   --base-color: var(--text-color);
-
   --text-color: #353430;  
   --text-decor-color:: var(--text-color);
-
   --logo-color: #FFC2E6;
   --logo-shadow-color: #FF0070;
-
   --cover-image: url(../images/cover-image-light.png);
 }
 
@@ -23,10 +20,8 @@
     --bg-color: #FFF1F7;
     --accent-color: #FF8DCB;
     --base-color: var(--text-color);
-  
     --text-color: #353430;  
     --text-decor-color:: var(--text-color);
-  
     --logo-color: #FFC2E6;
     --logo-shadow-color: #FF0070;
     --cover-image: url(../images/cover-image-light.png);
