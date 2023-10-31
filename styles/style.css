@@ -71,6 +71,12 @@
   visibility: hidden;
 }
 
+@media (prefers-color-scheme: light) {
+  .header__rec {
+    visibility: hidden;
+  }
+}
+
 .header__rec::before {
   content: "REC";
   padding-right: 9px;
