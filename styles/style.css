@@ -34,33 +34,6 @@
   }
 }
 
-.header__rec {
-  position: absolute;
-  height: 25px;
-  top: 20px;
-  right: 30px;
-}
-
-.header__rec::before {
-  content: "REC";
-  padding-right: 10px;
-  line-height: 25px;
-  color: var(--accent-color);
-}
-
-.header__rec::after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  top: -2px;
-  right: -1px;
-  width: 9px;
-  height: 9px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  box-shadow: 0px 0px 3px 2px var(--accent-color);
-}
-
 .decorated-zone {
   position: relative;
 }
@@ -68,8 +41,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  right: 20px;
   top: 20px;
+  right: 20px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
@@ -79,24 +52,43 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  left: 20px;
   bottom: 20px;
+  left: 20px;
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
 
-.header__border_top {
-  grid-area: btop;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+.header__rec {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 25px;
 }
 
-.header__border_bottom {
-  grid-area: bbottom;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+.theme_light .header__rec {
+  visibility: hidden;
+}
+
+.header__rec::before {
+  content: "REC";
+  padding-right: 10px;
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.header__rec::after {
+  content: "";
+  position: relative;
+  top: -1px;
+  right: -1px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .header__theme-menu {
