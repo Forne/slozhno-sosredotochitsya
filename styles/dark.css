@@ -7,7 +7,12 @@
 .page.theme_dark {
   --bg-color: #000028;
   --accent-color: #FF0070;
-  --text-color: #F1B2CE;
+  --base-color: var(--accent-color);
+
+  --text-color: #F1B2CE;  
+  --text-decor-color: var(--bg-color);
+
   --logo-color: #DB00FF;
+  --logo-shadow-color: #FF0070;
   --cover-image: url(../images/cover-image-dark.png);
 }
