@@ -6,7 +6,9 @@
   color: var(--text-color);
   font-size: 18px;
   line-height: 130%;
+  background: var(--cover-image) center / cover;
   background-color: var(--bg-color);
+  background-attachment: fixed;
 }
 
 /* Header */
@@ -20,7 +22,6 @@
     "description description";
   height: 100vh;
   padding: 10px;
-  background-image: var(--cover-image);
 }
 
 @media (width >= 768px) {
@@ -33,26 +34,58 @@
   }
 }
 
-@media (width >= 1024px) {
-  .header {
-    grid-template-areas:
-      "menu menu"
-      "logo logo"
-      ". description";
-  }
+.header__rec {
+  position: absolute;
+  height: 25px;
+  top: 20px;
+  right: 30px;
 }
 
-/* .header:after {
+.header__rec::before {
+  content: "REC";
+  padding-right: 10px;
+  line-height: 25px;
+  color: var(--accent-color);
+}
+
+.header__rec::after {
   content: "";
-  z-index: 2;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  display: inline-block;
   position: relative;
-  top: 0px;
-  right: 0px;
+  top: -2px;
+  right: -1px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 2px var(--accent-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
   width: 25px;
   height: 25px;
-} */
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
 
 .header__border_top {
   grid-area: btop;
@@ -102,7 +135,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 
 .header__logo {
